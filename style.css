@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #135677, #4e085f) ;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+.To-Do-App{
+   border-radius: 10px;
+   background-color: aliceblue;
+   margin: 100px auto 20px;
+   padding: 40px 30px 70px;
+    width: 100%;
+    max-width: 500px;
+    height: 30vw;
+    /* background-color: crimson; */
+     
+}
+.To-Do-App h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    color:#002765 ;
+   
+}
+.To-Do-App h2 img{
+
+    width: 45px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#edeef0 ;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+ 
+}
+input{
+    border: none;
+    background: none;
+    outline: none ; 
+    /* height: 40px; */
+    flex: 1;
+    font-weight: 10px;
+    padding: 10px;
+
+}
+button{
+    background-color: rgb(241, 82, 25);
+    outline: none;
+    color:white; 
+    border: none ;
+    border-radius: 49px;
+    padding: 16px 40px;
+    font-size: 19px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none ;
+    cursor: pointer;
+    position: relative;
+ 
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px ;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("circle.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+
+ul li.checked{
+    color: #5555;
+    text-decoration:  line-through;
+}
+ul li.checked::before{
+    background-image: url("tick.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+
+}
+ul li span:hover{
+    background: red;
+}
